@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+            Списък на фирма
+        </title>
+        <style>
+            table {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            tr, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center;
+                font-family: "Calibri", monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td height = "50" rowspan = "2" colspan = "3">Таблица 5 - Проектен подход 2</td>
+                <td style="background-color:rgb(211, 206, 238)" colspan = "3">Комбинация 1</td>
+            </tr>
+            <tr>
+                <td width = 50>A1</td>
+                <td width = 50>M1</td>
+                <td width = 50>R1</td>
+            </tr>
+            <tr style="background-color:rgb(211, 206, 238)">
+                <td rowspan="2" width = 350>Постоянни товари (G)</td>
+                <td width = 200>Неблагоприятни</td>
+                <td width = 200>YG</td>
+                <td>1.35</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="background-color:rgb(211, 206, 238)">
+                <td height = 25>Благоприятни</td>
+                <td>UG, fav</td>
+                <td>1.0</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2">Временни товари (Q)</td>
+                <td>Неблагоприятни</td>
+                <td>YQ</td>
+                <td>1.5</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Благоприятни</td>
+                <td>YQ, fav</td>
+                <td>0</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr style="background-color:rgb(211, 206, 238)">
+                <td>Характеристика на материалите (X)</td>
+                <td></td>
+                <td>YM</td>
+                <td></td>
+                <td>1.0</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Носеща способност (Rv)</td>
+                <td></td>
+                <td>YRv</td>
+                <td></td>
+                <td></td>
+                <td>1.4</td>
+            </tr>
+            <tr style="background-color:rgb(211, 206, 238)">
+                <td>Съпротивление на хлъзгане (Rh)</td>
+                <td></td>
+                <td>YRh</td>
+                <td></td>
+                <td></td>
+                <td>1.1</td>
+            </tr>
+            <tr>
+                <td>Почвено съпротивление срещу подпорни кон-
+                    <br>струкции... при склонове и откоси
+                </td>
+                <td></td>
+                <td>YRe</td>
+                <td></td>
+                <td></td>
+                <td>1.4
+                    <br>1.1
+                </td>
+            </tr>
+        </table>
+        <p></p>
+
+        <!-------------Table 2-------------->
+
+        <table style="background-color:rgb(255, 136, 81)">
+            <tr>
+                <td height = "50" rowspan = "2" colspan = "3" width = 720>Таблица 6 - Проектен подход 3</td>
+                <td  colspan = "4">Комбинация</td>
+            </tr>
+            <tr style="background-color:white">
+                <td width = 46>A1</td>
+                <td width = 46>A2</td>
+                <td width = 46>M2</td>
+                <td width = 46>R3</td>
+            </tr>
+            <tr>
+                <td rowspan="2" width = 370 style="background-color:white">Постоянни товари (G)</td>
+                <td width = 150>Неблагоприятни</td>
+                <td width = 150 style="background-color:white">YG</td>
+                <td>1.35</td>
+                <td>1.0</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Благоприятни</td>
+                <td style="background-color:white">UG, fav</td>
+                <td>1.0</td>
+                <td>1.0</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="background-color:white">Временни товари (Q)</td>
+                <td>Неблагоприятни</td>
+                <td style="background-color:white">YQ</td>
+                <td>1.5</td>
+                <td>1.3</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Благоприятни</td>
+                <td style="background-color:white">YQ, fav</td>
+                <td>0</td>
+                <td>0</td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="background-color:white">Коефициент на якост на срязване (tan)</td>
+                <td></td>
+                <td style="background-color:white">Y</td>
+                <td></td>
+                <td></td>
+                <td>1.25</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="background-color:white">Ефективна кохезия (c')</td>
+                <td></td>
+                <td style="background-color:white">Yc'</td>
+                <td></td>
+                <td></td>
+                <td>1.25</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="background-color:white">Недренирана якост (cu)</td>
+                <td></td>
+                <td style="background-color:white">Ycu</td>
+                <td></td>
+                <td></td>
+                <td>1.4</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="background-color:white">Безкраен натисков товар (qu)</td>
+                <td></td>
+                <td style="background-color:white">Yqu</td>
+                <td></td>
+                <td></td>
+                <td>1.4</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="background-color:white">Обемно тегло (Y)</td>
+                <td></td>
+                <td style="background-color:white">Y</td>
+                <td></td>
+                <td></td>
+                <td>1.0</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td style="background-color:white">Носеща способност (R)(без опънни пилоти)
+                    <br>Опънни пилоти
+                </td>
+                <td></td>
+                <td style="background-color:white">YR
+                    <br>YR,st
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1.0
+                    <br>1.1
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
