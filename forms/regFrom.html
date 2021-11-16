@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Регистрационен формуляр</title>
+</head>
+    <style>
+        .star{
+            color: red;
+            display: inline-block;
+            white-space: nowrap;
+        }
+    </style>
+<body>
+    <form>
+        <fieldset>
+            <legend>Регистрация</legend>
+        <!----->
+        Име:<br>
+        <input type="text" name="firstname" value="Иван"><br>
+        Презиме:<br>
+        <input type="text" name="middlename" value="Петров"><br>
+        Фамилия:<br>
+        <input type="text" name="lastname" value="Стоянов"><br><br>
+
+        Факултет:<br>
+            <input type="radio" name="faculty" value="agr"> Аграрен факултет<br>
+            <input type="radio" name="faculty" value="vetmed"> Ветеринарномедицински факултет<br>
+            <input type="radio" name="faculty" value="med"> Медицински факултет<br>
+            <input type="radio" name="faculty" value="ped"> Педагогически факултет<br>
+            <input type="radio" name="faculty" value="econ"> Стопански факултет<br>
+            <input type="radio" name="faculty" value="tech"> Факултет "Техника и технологии"<br>
+
+        <br>Специалност:<br>
+        <input type="radio" name="speciality"> Финанси<br>
+        <input type="radio" name="speciality"> Счетоводство и финанси<br>
+        <input type="radio" name="speciality"> Застраховане и осигуряване<br>
+        <input type="radio" name="speciality"> Икономика и търговия<br>
+        <input type="radio" name="speciality"> Бизнес икономика<br>
+        <input type="radio" name="speciality"> Предприемачество и инвестиционен мениджмънт<br>
+        <input type="radio" name="speciality"> Недвижими имоти и инвестиции<br>
+        <input type="radio" name="speciality"> Дигитални медии и ПР<br>
+        <input type="radio" name="speciality"> Маркетинг<br>
+        <input type="radio" name="speciality"> Международен бизнес (с преподаване на английски език)<br>
+        <input type="radio" name="speciality"> Международни икономически отношения<br>
+
+        <br>Курс на обучение:<br>
+        <input type="radio" name="year" checked> 1<br>
+        <input type="radio" name="year"> 2<br>
+        <input type="radio" name="year"> 3<br>
+        <input type="radio" name="year"> 4<br>
+        <input type="radio" name="year"> 5<br>
+        <input type="radio" name="year"> 6<br>
+
+        <br>Форма на обучение: <div class="star">*</div><br>
+        <input type="radio" name="edutype" checked required> Редовно<br>
+        <input type="radio" name="edutype" required> Задочно<br>
+
+        <br>Телефон за контакти:<br>
+        <input type="tel" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br>
+
+        <br>Е-mail адрес: <div class="star">*</div><br>
+        <input type="email" required><br>
+
+        <br><u>Средно образование:</u> <div class="star">*</div><br>
+        <ul>
+            <li>Училище: <input type="text" name="school"></li><br>
+            <li>Специалност: <input type="text" name="spec"></li><br>
+            <li>Град: <input type="text" name="city"></li>
+        </ul>
+
+        Чуждоезикова подготовка: <div class="star">*</div><br>
+        <input type="radio" name="edulevel" required> отлично<br>
+        <input type="radio" name="edulevel" required> много добро<br>
+        <input type="radio" name="edulevel" required> добро<br>
+        <input type="radio" name="edulevel" required> задоволително<br>
+        <input type="radio" name="edulevel" required> не владея<br>
+
+        <br>Компютърни умения (ниво на владеене): <div class="star">*</div><br>
+        <input type="radio" name="compskills" required> потребител<br>
+        <input type="radio" name="compskills" required> работа с програмни продукти<br>
+
+        <br>Шофьорски умения (категория): <div class="star">*</div><br>
+        <input type="text" name="school" required><br>
+
+        <br>Други умения: <br>
+        <input type="checkbox" name="otherskills"> организационни<br>
+        <input type="checkbox" name="otherskills"> социални<br>
+        <input type="checkbox" name="otherskills"> технически<br>
+        <input type="checkbox" name="otherskills"> артистични<br>
+        <input type="checkbox" name="otherskills"> Други: <input type="text" name="moreskills"><br>
+
+        <br>Допълнително обучение: <br>
+        <input type="checkbox" name="extraedu"> Курсове: <input type="text" name="courses"><br>
+        <input type="checkbox" name="extraedu"> Специализации: <input type="text" name="specialisations"><br>
+        <input type="checkbox" name="extraedu"> Участия в семинари: <input type="text" name="participations"><br>
+        <input type="checkbox" name="extraedu"> Конференции: <input type="text" name="conferences"><br>
+        <input type="checkbox" name="extraedu"> Други: <input type="text" name="moreedu"><br>
+
+        <br>Трудов опит:<br>
+        <ul>
+            <li>Период: <input type="text" name="period"></li><br>
+            <li>Позиция: <input type="text" name="position"></li><br>
+            <li>Организация: <input type="text" name="organisation"></li>
+        </ul>
+
+        Търсите ли работа в момента?<br>
+        <input type="radio" name="jobsearch" checked> Да<br>
+        <input type="radio" name="jobsearch"> Не<br>
+
+        <br>Отбележете вида заетост, която бихте искали да имате на работното място/стаж: <div class="star">*</div><br>
+        <input type="radio" name="shift"> Пълен работен ден<br>
+        <input type="radio" name="shift"> Почасово<br>
+        <input type="radio" name="shift"> Сезонна заетост<br>
+        <input type="radio" name="shift"> За момента не желая<br>
+
+        <br>Посочете <b>поне три сфери</b> на професионална реализация, в които бихте приели
+        предложение за работа/стаж, като <b>започнете от най-предпочитаната</b>: <div class="star">*</div><br>
+        <input type="checkbox" name="realisation"> Администрация<br>
+        <input type="checkbox" name="realisation"> Продажби и дистрибуция<br>
+        <input type="checkbox" name="realisation"> Здравеопазване<br>
+        <input type="checkbox" name="realisation"> Банкова и финансова сфера<br>
+        <input type="checkbox" name="realisation"> Образование<br>
+        <input type="checkbox" name="realisation"> Социални дейности<br>
+        <input type="checkbox" name="realisation"> Селско стопанство<br>
+        <input type="checkbox" name="realisation"> Медии и реклама<br>
+        <input type="checkbox" name="realisation"> Друго: <input type="text" name="otherrealis"><br>
+        <br><input type="submit" value="Изпрати">
+        </fieldset>
+    </form>
+</body>
+</html>
