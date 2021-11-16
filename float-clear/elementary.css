@@ -1,0 +1,42 @@
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+h1, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkblue; 
+}
+h1, h2 {
+    text-align: center;
+}
+h2 {
+    color: #b02b24;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h3 {
+    letter-spacing: 1.3pt;
+    text-align: right;
+}
+p {
+    color: black;
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 3em;
+}
+.word {
+    color: #70ff5d;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: top;
+    padding-left: 5px;
+    padding-right: 5px;
+}
