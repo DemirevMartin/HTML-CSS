@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unresponsive -> Responsive Site</title>
+	<style>
+*{    margin: 0;     padding: 0; }
+
+body { background-image: url('site-background.jpg');   background-attachment: fixed; font-family: Tahoma;}
+
+    .wrapper { font-size: 16px;     margin: 0 auto 20px;     width: 960px;    }
+
+        .wrapper > header { margin-bottom: 35px;  padding: 15px;
+            padding-bottom: 25px;        background: rgba(176, 224, 244, 0.8);     }
+
+        .wrapper > header h1 {  font-size: 200%;  text-align: right;   }
+
+        .wrapper > header h1 a { color: #000000; display: block; text-decoration: none;  }
+
+        .wrapper > header h1 a span {  margin-left: 30px; }
+
+        .wrapper > header h1 a img { height: 50px; 	float:left;  }
+
+        .wrapper > header nav { margin-top: 20px; 	height:40px; }
+
+        .wrapper > header nav ul { list-style-type: none; float:right; }
+
+        .wrapper > header nav ul li { float:left;   width: 150px;     margin-left: 10px;  }
+
+        .wrapper > header nav ul li > a:hover { color: #224465; 	background: rgba(176, 224, 244, 1);
+							border: 1px solid #224465;
+        }
+
+        .wrapper > header nav ul li a { color: rgba(176, 224, 244, 1); display: block; padding: 5px 15px;
+            text-decoration: none; border: 1px solid rgb(176, 224, 244); text-align: center;
+			background: #224465; 	font-size: 110%;
+        }
+
+        .aside { width: 29%; 	float:right;  }
+
+        .aside div { background: rgba(176, 224, 244, 0.8); margin-bottom: 15px;  padding: 15px;  }
+
+        .aside div.news ul li { border-bottom: 1px solid black;   margin: 5px 0;   }
+
+        .aside div.news ul li a { color: black;    padding: 5px 0 5px 0;     }
+
+        .aside div.news ul li:last-of-type {  border: none;     }
+
+        .aside div.news ul li:hover a { text-decoration: underline; }
+
+        .aside div ul { list-style-type: none;   }
+
+        .aside div ul li a { color: #000000; display: block; text-decoration: none;  }
+
+        .aside div ul li a img { vertical-align: middle;  }
+
+        .aside div ul li a span { vertical-align: middle; }
+
+        .aside div ul li:hover a span { text-decoration: underline;  }
+
+        .wrapper > section {   width: 70%; float:left;     }
+
+        .wrapper > section article { background: rgba(176, 224, 244, 0.8); margin-bottom: 13px; padding: 15px; }
+
+        .wrapper > section article header { margin: 0 auto;      }
+
+        .wrapper > section article header h1 {   font-size: 160%;    }
+
+        .wrapper > section article > div p { text-align: justify; text-indent: 2em;  }
+
+        .wrapper > footer {background: rgba(176, 224, 244, 0.8); padding: 25px; text-align: center; clear:both;}
+
+        .wrapper > footer h2 {font-size: 130%; }
+
+        .wrapper > footer h2 a { color: black; }
+		
+        @media screen and (min-width:780px) and  (max-width:960px) {    /* изчезват празните места , двете колони променят ширината си заедно с ширината на прозореца  */
+            .wrapper {
+                width: 100%;
+            }
+            .section {
+                width: 100%;
+            }
+        }
+	
+        @media screen and (min-width:640px) and  (max-width:780px){     /* менюто се центрира и елементите му се разполагат равномерно по цялата ширина  */
+            .wrapper {
+                width: 100%;
+            }
+            .section {
+                width: 100%;
+            } 
+            .wrapper > header nav ul {
+                float:none;
+            }
+            .wrapper > header nav ul li {
+                width: 15.3%;
+                margin-left: 7.7%;
+            }
+        }
+</style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>
+                <a href="#">
+                    <img src="softuni-long-logo.png" />
+                    <span>Responsive Site</span>
+                </a>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Nav item 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Nav item 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Nav item 3</a>
+                    </li>
+                    <li>
+                        <a href="#">Nav item 4</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <article>
+                <header>
+                    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+                </header>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel massa
+                        nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                        ridiculus mus.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <header>
+                    <h1>Nulla adipiscing, ipsum malesuada</h1>
+                </header>
+                <div>
+                    <p>
+                        Nulla adipiscing, ipsum malesuada sagittis euismod, nulla felis faucibus
+                        diam, nec tempus mauris leo at est. Nunc ligula tortor, tincidunt a porta
+                        sed, dignissim a neque.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <header>
+                    <h1>Aenean quam eros, sollicitudin eu auctor eu</h1>
+                </header>
+                <div>
+                    <p>
+                        Aenean quam eros, sollicitudin eu auctor eu, convallis eget augue. Praesent
+                        aliquet luctus mauris vel molestie. Praesent hendrerit hendrerit placerat.
+                    </p>
+                </div>
+            </article>
+            <article>
+                <header>
+                    <h1>Phasellus non lacus sit</h1>
+                </header>
+                <div>
+                    <p>
+                        Phasellus non lacus sit amet dolor blandit consequat sit amet id felis.
+                        Nunc eu massa ac lacus posuere ultricies. Pellentesque aliquam nunc ut
+                        enim feugiat viverra.
+                    </p>
+                </div>
+            </article>
+        </section>
+        <div class="aside">
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="social-twitter-box.png" />
+                            <span>Tweet about us</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="social-facebook.png" />
+                            <span>Follow us on Facebook</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="social-google.png" />
+                            <span>Join us on Google Plus</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="social-linkedin.png" />
+                            <span>Join us on LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="social-myspace.png" />
+                            <span>Follow us on Myspace</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="news">
+                <ul>
+                    <li>
+                        <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit</a>
+                    </li>
+                    <li>
+                        <a href="#">Nulla adipiscing, ipsum malesuada</a>
+                    </li>
+                    <li>
+                        <a href="#">Aenean quam eros, sollicitudin eu auctor eu</a>
+                    </li>
+                    <li>
+                        <a href="#">Phasellus non lacus sit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <h2>
+                Software University - <a href="http://softuni.bg" target="_blank">softuni.bg</a>
+            </h2>
+        </footer>
+    </div>
+</body>
+
+</html>

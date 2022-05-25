@@ -1,0 +1,85 @@
+*{border: 0;margin: 0;}
+
+body{ background-color: #000000; font: 12px Tahoma, Arial, Helvetica, sans-serif; color: #666666;}
+
+#main{ margin: 0 auto; width: 1000px;}
+
+.logo {
+	font-size: 26px; color: #FCBA64; font-weight: bold; font-family:'Courier New', 'Algerian','Century Gothic'; font-style: italic;
+}
+
+#logo1{
+	padding-left: 50px; text-align: left; margin-bottom:15px;
+}
+
+#logo2{
+	text-align:right;padding-right:50px;margin:0; margin-top:15px;
+}
+
+#content{ border:1px dashed #666; padding: 10px;}
+
+#left{ float:left; padding: 10px; clear: both; }
+
+.part { float:left; width:30.2%; padding:1%; border:1px solid gray; font-size:11px; margin-bottom:20px; }
+
+.part1{margin-left:1.2%;}
+
+.wnr { clear:both; padding:10px; border:1px solid gray; font-size:14px; margin-top:20px; text-align:center; }
+
+.wn { margin:18px; font-size:18px; }
+
+#right {float: right; padding: 10px; clear: both;}
+
+.padding {padding: 10px; color:#FF0000; font-weight: bold;}
+
+img{ width:100%;}
+
+@media screen /* and (min-width:600px) */ and  (max-width:1000px) {
+	#main {
+		width: 99%;
+		padding: 0.5%;
+	}
+	.wnr {
+		padding: 1%;
+	}
+}
+
+@media screen and  (max-width:600px) {
+	/* #main {width: 100%;}  ->  + max-width: 1000px */
+
+	.part {
+		width: 98%;
+	}
+
+	.header-footer-img {
+		width: 100%;
+	}
+
+	img {
+		width: 30%;
+		float: left;
+		margin: 0 1% 1% 0;
+	}
+	.part {
+		padding:0 1% 1% 0;
+		margin-right: 0;
+		margin-left: 0;
+	}
+	.part1 {
+		margin-left: 0;
+	}
+}
+
+@media screen and  (max-width:320px) {
+	.part, .wnr, .wn {
+		font-size: 7px;
+	}
+	.wn {
+		margin-left:0;
+	}
+	.logo {
+		font-size: 14px;
+	}
+
+	/* + max-width: 600px */
+}

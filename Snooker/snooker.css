@@ -1,0 +1,56 @@
+body {
+    background-color: #345;
+    font-size: 75%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+header {
+    border: 1px dotted #abc;
+    text-align: center;
+    font-size: 200%;
+    color: #abc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+div.game {
+    border: 1px solid #8a8;
+    color: #8a8;
+    background-color: #246;
+    font-size: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+div.table {
+    border: 1px solid #363;
+    color: #363;
+    background-color: #123;
+    font-size: 90%;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+div.balls {
+    border: 1px solid #a86;
+    color: #a86;
+    background-color: #123;
+    font-size: 90%;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+div.history {
+    border: 1px solid #777;
+    color: #777;
+    background-color: #135;
+    font-size: 90%;
+    height: 300px;
+    overflow: auto;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+}
+footer {
+    border: 1px dashed gray;
+    text-align: center;
+    font-size: 80%;
+    color: #abc;
+    font-weight: bold;
+}

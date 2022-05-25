@@ -1,0 +1,26 @@
+table {
+    margin: 0 auto;
+    border: 1px solid darkgreen;
+    border-collapse: collapse;
+}
+tr, td {
+    width: 120px;
+    height: 30px;
+    border: 1px solid darkgreen;
+    border-collapse: collapse;
+    text-align: center;
+}
+caption {
+    text-align: center;
+}
+.row1 {
+    background-color: rgb(3, 180, 3);
+    color: white;
+    font-weight: bold;
+}
+.row2-4 {
+    background-color: rgba(240, 196, 196, 0.863);
+}
+.row3-5 {
+    background-color: rgb(165, 236, 165);
+}

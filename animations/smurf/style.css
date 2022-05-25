@@ -1,0 +1,44 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+html { 
+  background: url(bg.png) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+
+/* steps () е функция за синхронизиране, 
+ * която ни позволява да прекъснем анимация или преход в сегменти, 
+ * а не един непрекъснат преход от едно състояние в друго. */
+.smurf{
+    position: absolute;
+    background-image: url(smurf_sprite.png);
+    display: inline-block;
+    height: 128px;
+    width: 72px;
+    top: 75%;
+    left: 50%;
+    margin-left: -37px;
+    animation: walk 1s steps(1) infinite;
+}
+
+@keyframes walk {
+
+from { background-position:  -31px -4px; }
+7%  {background-position:  -159px -4px; } 
+14% { background-position: -287px -4px; }
+21% { background-position: -416px -4px; }
+28% { background-position: -32px -132px; }
+35% {background-position: -159px -132px; }
+42% {background-position: -287px -132px; }
+49% {background-position: -415px -132px; }
+56% {background-position: -31px -260px; }
+63% { background-position: -159px -260px;}
+70% { background-position: -288px -260px; }
+77% { background-position: -416px -260px; }
+84% { background-position: -32px -388px; }
+93% { background-position: -159px -388px; }
+100% { background-position: -287px -388px; }
+}

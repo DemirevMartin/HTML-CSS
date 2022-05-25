@@ -1,0 +1,61 @@
+/*Указания:
+1.	Цвят на фона : #ffff1a
+2.	Цвят на буквите и горната част : #006600
+3.	Размер на основния блок  70 % 
+4.	Шрифт на надписа „Вълшебството на зимната градина“ : "Century Gothic"*/
+body {
+    margin: 1.5% 15% 0 15%;
+    background-color: #ffff1a;
+    color: #006600;
+}
+header {
+    background-color: #006600;
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2% 5%;
+    font-family: Century Gothic;
+    margin-bottom: 2%;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.winter {
+    font-weight: bolder;
+    font-size: 17pt;
+}
+main 
+{
+    width: 70%;
+    margin: 0 auto;
+    padding: 1px 5%;
+    background-color: white;  
+}
+div.left {
+    width: 65%;
+    color: black;
+}
+div.right {
+    position: absolute;
+    top: 58%;
+    left: 61%;
+    width: 13%;
+    color: black;
+}
+p {
+    text-align: justify;
+}
+.top {
+    font-family: Century Gothic;
+    color: #006600;
+    font-weight: bold;
+    text-align: unset;
+}
+.date {
+    color: lightgray;
+}
+.tree {
+    width: 100%;
+    height: 12em;
+}

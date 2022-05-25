@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Абсолютно позициониране на елементите</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        div.outside {
+            position: absolute;
+            left: 100px;
+            top: 50px;
+            background-color: lightgreen;
+            width: 300px;
+            height: 200px;
+        }
+        .inside-top-right {
+            position: absolute;
+            left: 200px;
+            bottom: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: lightskyblue;    
+        }
+        .inside-bottom-left {
+            position: absolute;
+            top: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: lightskyblue;    
+        }
+        .inside-center {
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            width: 100px;
+            height: 100px;
+            background-color: lightskyblue;    
+        }
+        p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outside">
+        <p style="text-align: center;">Отвън</p>
+        <div class="inside-top-right">
+            <p style="text-align: center;">Отвътре</p>
+        </div>
+    </div>
+
+    <div class="outside" style="margin-top: 300px;">
+        <p style="text-align: center;">Отвън</p>
+        <div class="inside-bottom-left">
+            <p style="text-align: center;">Отвътре</p>
+        </div>
+    </div>
+
+    <div class="outside" style="margin-top: 600px;">
+        <p style="text-align: center;">Отвън</p>
+        <div class="inside-center">
+            <p style="text-align: center;">Отвътре</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Blocks positioning</title>
+        <style>
+            body {
+                margin: 0%;
+            }
+            div.main {
+                padding: 0%;
+                position: absolute;
+                width: 750px;
+                height: 100%;
+                background-color: rgba(86, 84, 204, 0.712);
+            }
+            div.left {
+                position: absolute;
+                top: 17%;
+                border-right: 2px dashed rgba(86, 84, 204, 0.712);
+                width: 149px;
+                height: 70%;
+                background-color: lightgray;
+            }
+            div.right {
+                position: absolute;
+                left: 151px;
+                top: 17%;
+                width: 599px;
+                height: 70%;
+                background-color: lightgray;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="main">
+            <h1 style="margin: 0; text-align: center;">Заглавна част</h1>
+            <div style="padding-top: 68%">&copy; 2020</div>
+            <div class="left">
+                <span style="position: absolute; top: 20px; left: 50px;">Меню</span>
+            </div>
+            <div class="right"><h2>МГ - Варна</h2>
+                <h4>Упражнение разположение на блокове</h4>
+            </div>
+        </div>
+    </body>
+</html>
